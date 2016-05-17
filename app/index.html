@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular music player</title>
+
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/app.css" rel="stylesheet">
+
+    
+
+  </head>
+  <body class="container-fluid" ng-controller="MainController">
+
+<div class="row">
+  <div class="col-xs-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+
+          <div class="col-xs-4">
+            <button class="btn btn-info btn-lg btn-block">
+              <i class="glyphicon glyphicon-fast-backward"></i>
+            </button>
+          </div>
+
+          <div class="col-xs-4">
+            <button class="btn btn-info btn-lg btn-block">
+              <i class="glyphicon glyphicon-pause"></i>
+            </button>
+          </div>
+
+          <div class="col-xs-4">
+            <button class="btn btn-info btn-lg btn-block">
+              <i class="glyphicon glyphicon-fast-forward"></i>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6">
+    
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Music info
+      </div>
+      </div>
+
+  </div>
+
+</div>
+
+    
+    <div class="row">
+      <div class="col-xs-12">
+        
+            <div class="list-group">
+              <a
+                href="#"
+               ng-click="playMusic(file)"
+                ng-class="{active: activeFile === file}"
+               class="list-group-item"
+                ng-repeat="file in musicFiles">{{file.name}}</a>
+            </div>
+          
+
+      </div>
+    </div>
+
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-audio/app/angular.audio.js"></script>
+    <script src="scripts/app.js" ></script>
+    <script src="scripts/controllers/MainController.js" ></script>
+    <script src="scripts/services/FileService.js" ></script>
+
+  </body>
+
+</html>

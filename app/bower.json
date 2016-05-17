@@ -1,0 +1,22 @@
+{
+  "name": "ang-app",
+  "homepage": "https://github.com/electron/electron-quick-start",
+  "authors": [
+    "Marwane <mbelahcen@octo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-audio": "^1.7.2"
+  }
+}

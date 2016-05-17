@@ -1,0 +1,17 @@
+{
+  "name": "music-demo",
+  "version": "1.0.0",
+  "description": "demo application using electron framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Marwane Belahcen",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.1.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.5"
+  }
+}
