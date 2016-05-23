@@ -4,10 +4,10 @@
   "description": "demo application using electron framework",
   "main": "index.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron index.js"
   },
   "author": "Marwane Belahcen",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "electron-prebuilt": "^1.1.0"
   },

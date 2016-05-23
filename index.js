@@ -26,7 +26,9 @@ function createWindow () {
   mainWindow = new BrowserWindow({width: 1024, height: 768})
   mainWindow.loadURL(`file://${__dirname}/app/index.html`)
 
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
+
+  mainWindow.setResizable(false)
 
   mainWindow.on('closed', function () {
     mainWindow = null
